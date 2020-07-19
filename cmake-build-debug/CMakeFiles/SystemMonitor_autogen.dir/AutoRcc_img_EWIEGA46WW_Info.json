@@ -1,0 +1,23 @@
+{
+	"BUILD_DIR" : "/home/dyf/桌面/audio/SystemMonitor/SystemMonitor/cmake-build-debug/SystemMonitor_autogen",
+	"CMAKE_BINARY_DIR" : "/home/dyf/桌面/audio/SystemMonitor/SystemMonitor/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/dyf/桌面/audio/SystemMonitor/SystemMonitor/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/dyf/桌面/audio/SystemMonitor/SystemMonitor",
+	"CMAKE_SOURCE_DIR" : "/home/dyf/桌面/audio/SystemMonitor/SystemMonitor",
+	"INCLUDE_DIR" : "/home/dyf/桌面/audio/SystemMonitor/SystemMonitor/cmake-build-debug/SystemMonitor_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/dyf/桌面/audio/SystemMonitor/SystemMonitor/img/icon.svg",
+		"/home/dyf/桌面/audio/SystemMonitor/SystemMonitor/img/icon_big.svg"
+	],
+	"LOCK_FILE" : "/home/dyf/桌面/audio/SystemMonitor/SystemMonitor/cmake-build-debug/CMakeFiles/SystemMonitor_autogen.dir/AutoRcc_img_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "img" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_img.cpp",
+	"RCC_EXECUTABLE" : "/usr/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/dyf/桌面/audio/SystemMonitor/SystemMonitor/cmake-build-debug/CMakeFiles/SystemMonitor_autogen.dir/AutoRcc_img_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/dyf/桌面/audio/SystemMonitor/SystemMonitor/img.qrc",
+	"VERBOSITY" : 0
+}

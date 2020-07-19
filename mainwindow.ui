@@ -1,0 +1,1201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1350</width>
+                <height>633</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>1350</width>
+                <height>633</height>
+            </size>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QHBoxLayout" name="horizontalLayoutTab">
+                <item>
+                    <widget class="QTabWidget" name="tabWidget">
+                        <property name="sizePolicy">
+                            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>420</width>
+                                <height>550</height>
+                            </size>
+                        </property>
+                        <property name="currentIndex">
+                            <number>8</number>
+                        </property>
+                        <widget class="QWidget" name="tab_2">
+                            <attribute name="title">
+                                <string>登录</string>
+                            </attribute>
+                            <widget class="QLabel" name="lb_user_name">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>250</x>
+                                        <y>120</y>
+                                        <width>61</width>
+                                        <height>17</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>用户名</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" name="lb_password">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>250</x>
+                                        <y>180</y>
+                                        <width>61</width>
+                                        <height>17</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>密码</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" name="le_user_name">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>340</x>
+                                        <y>120</y>
+                                        <width>271</width>
+                                        <height>25</height>
+                                    </rect>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" name="le_password">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>340</x>
+                                        <y>180</y>
+                                        <width>271</width>
+                                        <height>25</height>
+                                    </rect>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" name="pb_confirm_login">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>520</x>
+                                        <y>270</y>
+                                        <width>80</width>
+                                        <height>25</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>确定</string>
+                                </property>
+                            </widget>
+                        </widget>
+                        <widget class="QWidget" name="tab_sys">
+                            <attribute name="title">
+                                <string>系统信息</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayoutSystemInfo">
+                                <item>
+                                    <widget class="QGroupBox" name="gb_device_info">
+                                        <property name="sizePolicy">
+                                            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>420</width>
+                                                <height>240</height>
+                                            </size>
+                                        </property>
+                                        <property name="title">
+                                            <string>设备信息</string>
+                                        </property>
+                                        <layout class="QVBoxLayout" name="verticalLayoutDeviceInfo">
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_device_name">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelDeviceName">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>设备名称:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_device_name">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_device_disk">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelDiskSize">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>磁盘总容量:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_device_disk">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_device_IPv4">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelIPv4">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>IPv4地址:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_device_IPv4">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_device_IPv6">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelIPv6">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>IPv6地址:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_device_IPv6">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_device_MAC">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelMAC">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>MAC地址:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_device_MAC">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_device_mem">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelMem">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>内存总量:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_device_mem">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                        </layout>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QGroupBox" name="gb_CPU_info">
+                                        <property name="sizePolicy">
+                                            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>420</width>
+                                                <height>160</height>
+                                            </size>
+                                        </property>
+                                        <property name="title">
+                                            <string>CPU信息</string>
+                                        </property>
+                                        <layout class="QVBoxLayout" name="verticalLayoutCPUInfo">
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_CPU_model">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelCPUModel">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>CPU型号:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_CPU_model">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_CPU_num">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelCPUCores">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>CPU核数:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_CPU_num">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_CPU_freq">
+                                                    <property name="sizeConstraint">
+                                                        <enum>QLayout::SetDefaultConstraint</enum>
+                                                    </property>
+                                                    <property name="rightMargin">
+                                                        <number>0</number>
+                                                    </property>
+                                                    <item>
+                                                        <widget class="QLabel" name="labelCPUFreq">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>CPU频率:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_CPU_freq">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="labelCPUMHZ">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>MHZ</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="h1_CPU_buf">
+                                                    <property name="sizeConstraint">
+                                                        <enum>QLayout::SetDefaultConstraint</enum>
+                                                    </property>
+                                                    <property name="rightMargin">
+                                                        <number>0</number>
+                                                    </property>
+                                                    <item>
+                                                        <widget class="QLabel" name="labelCPUBuf">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>缓存大小:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_CPU_buf">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                        </layout>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QGroupBox" name="gb_V_info">
+                                        <property name="sizePolicy">
+                                            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>420</width>
+                                                <height>120</height>
+                                            </size>
+                                        </property>
+                                        <property name="title">
+                                            <string>版本信息</string>
+                                        </property>
+                                        <layout class="QVBoxLayout" name="verticalLayoutVersionInfo">
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_V_kernel">
+                                                    <property name="sizeConstraint">
+                                                        <enum>QLayout::SetDefaultConstraint</enum>
+                                                    </property>
+                                                    <property name="rightMargin">
+                                                        <number>0</number>
+                                                    </property>
+                                                    <item>
+                                                        <widget class="QLabel" name="labelKernelVersion">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>内 核 版 本:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_V_kernel">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_V_complier">
+                                                    <property name="sizeConstraint">
+                                                        <enum>QLayout::SetDefaultConstraint</enum>
+                                                    </property>
+                                                    <property name="rightMargin">
+                                                        <number>0</number>
+                                                    </property>
+                                                    <item>
+                                                        <widget class="QLabel" name="labelComplier">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>编译器版本:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_V_complier">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_V_os_type">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelOSType">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>操作系统:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_V_OS_type">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_V_OS_version">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelOSVersion">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>操作系统版本:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_V_os_version">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                        </layout>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab_OS">
+                            <attribute name="title">
+                                <string>操作系统信息</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayoutSystemInfo">
+                                <item>
+                                    <widget class="QGroupBox" name="gb_OS_load">
+                                        <property name="sizePolicy">
+                                            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>420</width>
+                                                <height>240</height>
+                                            </size>
+                                        </property>
+                                        <property name="title">
+                                            <string>操作系统负载</string>
+                                        </property>
+                                        <layout class="QVBoxLayout" name="verticalLayoutOSLoad">
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_OS_load_1">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelOSLoad1">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>操作系统1分钟内平均负载:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_OS_load_1">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_OS_load_5">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelOSLoad5">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>操作系统5分钟内平均负载:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_OS_load_5">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_OS_load_15">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelOSLoad15">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>操作系统15分钟内平均负载:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_OS_load_15">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                        </layout>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QGroupBox" name="gb_OS_time">
+                                        <property name="sizePolicy">
+                                            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                <horstretch>0</horstretch>
+                                                <verstretch>0</verstretch>
+                                            </sizepolicy>
+                                        </property>
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>420</width>
+                                                <height>240</height>
+                                            </size>
+                                        </property>
+                                        <property name="title">
+                                            <string>操作系统时间</string>
+                                        </property>
+                                        <layout class="QVBoxLayout" name="verticalLayoutOSTime">
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_OS_run_time">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelOSRunTime">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>操作系统运行时间:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_OS_run_time">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="hl_OS_free_time">
+                                                    <item>
+                                                        <widget class="QLabel" name="labelOSFreeTime">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>操作系统空闲时间:</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QLabel" name="lb_OS_free_time">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                                                    <horstretch>1</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>[]</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                        </layout>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab_CPU_data">
+                            <attribute name="title">
+                                <string>CPU数据</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayoutCPUData">
+                                <item>
+                                    <widget class="QChartView" name="cv_CPU">
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>420</width>
+                                                <height>500</height>
+                                            </size>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab_mem_data">
+                            <attribute name="title">
+                                <string>内存数据</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayoutMemData">
+                                <item>
+                                    <widget class="QChartView" name="cv_mem">
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>420</width>
+                                                <height>500</height>
+                                            </size>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab_net_data">
+                            <attribute name="title">
+                                <string>网络数据</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayoutNetData">
+                                <item>
+                                    <widget class="QChartView" name="cv_net">
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>420</width>
+                                                <height>500</height>
+                                            </size>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab_disk_data">
+                            <attribute name="title">
+                                <string>磁盘信息</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayoutNetData">
+                                <item>
+                                    <widget class="QChartView" name="cv_disk">
+                                        <property name="minimumSize">
+                                            <size>
+                                                <width>420</width>
+                                                <height>500</height>
+                                            </size>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab_saved_device_data">
+                            <attribute name="title">
+                                <string>已保存系统数据</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayoutSavedDeviceData">
+                                <item>
+                                    <widget class="QTableView" name="tv_saved_device_data">
+                                        <property name="autoScroll">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="editTriggers">
+                                            <set>QAbstractItemView::NoEditTriggers</set>
+                                        </property>
+                                        <property name="alternatingRowColors">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="selectionMode">
+                                            <enum>QAbstractItemView::SingleSelection</enum>
+                                        </property>
+                                        <property name="selectionBehavior">
+                                            <enum>QAbstractItemView::SelectRows</enum>
+                                        </property>
+                                        <property name="verticalScrollMode">
+                                            <enum>QAbstractItemView::ScrollPerItem</enum>
+                                        </property>
+                                        <property name="gridStyle">
+                                            <enum>Qt::SolidLine</enum>
+                                        </property>
+                                        <property name="cornerButtonEnabled">
+                                            <bool>false</bool>
+                                        </property>
+                                        <attribute name="verticalHeaderVisible">
+                                            <bool>false</bool>
+                                        </attribute>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab_saved_OS_data">
+                            <attribute name="title">
+                                <string>已保存操作系统数据</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayoutSavedOSData">
+                                <item>
+                                    <widget class="QTableView" name="tv_saved_OS_data">
+                                        <property name="sizeIncrement">
+                                            <size>
+                                                <width>0</width>
+                                                <height>0</height>
+                                            </size>
+                                        </property>
+                                        <property name="autoScroll">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="editTriggers">
+                                            <set>QAbstractItemView::NoEditTriggers</set>
+                                        </property>
+                                        <property name="alternatingRowColors">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="selectionMode">
+                                            <enum>QAbstractItemView::SingleSelection</enum>
+                                        </property>
+                                        <property name="selectionBehavior">
+                                            <enum>QAbstractItemView::SelectRows</enum>
+                                        </property>
+                                        <property name="verticalScrollMode">
+                                            <enum>QAbstractItemView::ScrollPerItem</enum>
+                                        </property>
+                                        <property name="gridStyle">
+                                            <enum>Qt::SolidLine</enum>
+                                        </property>
+                                        <property name="cornerButtonEnabled">
+                                            <bool>false</bool>
+                                        </property>
+                                        <attribute name="verticalHeaderVisible">
+                                            <bool>false</bool>
+                                        </attribute>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab_saved_CPU_data">
+                            <attribute name="title">
+                                <string>已保存CPU数据</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayoutSavedCPUData">
+                                <item>
+                                    <widget class="QTableView" name="tv_saved_CPU_data">
+                                        <property name="autoScroll">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="editTriggers">
+                                            <set>QAbstractItemView::NoEditTriggers</set>
+                                        </property>
+                                        <property name="alternatingRowColors">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="selectionMode">
+                                            <enum>QAbstractItemView::SingleSelection</enum>
+                                        </property>
+                                        <property name="selectionBehavior">
+                                            <enum>QAbstractItemView::SelectRows</enum>
+                                        </property>
+                                        <property name="verticalScrollMode">
+                                            <enum>QAbstractItemView::ScrollPerItem</enum>
+                                        </property>
+                                        <property name="gridStyle">
+                                            <enum>Qt::SolidLine</enum>
+                                        </property>
+                                        <property name="cornerButtonEnabled">
+                                            <bool>false</bool>
+                                        </property>
+                                        <attribute name="verticalHeaderVisible">
+                                            <bool>false</bool>
+                                        </attribute>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab_saved_mem_data">
+                            <attribute name="title">
+                                <string>已保存内存数据</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayoutSavedMemData">
+                                <item>
+                                    <widget class="QTableView" name="tv_saved_mem_data">
+                                        <property name="autoScroll">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="editTriggers">
+                                            <set>QAbstractItemView::NoEditTriggers</set>
+                                        </property>
+                                        <property name="alternatingRowColors">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="selectionMode">
+                                            <enum>QAbstractItemView::SingleSelection</enum>
+                                        </property>
+                                        <property name="selectionBehavior">
+                                            <enum>QAbstractItemView::SelectRows</enum>
+                                        </property>
+                                        <property name="verticalScrollMode">
+                                            <enum>QAbstractItemView::ScrollPerItem</enum>
+                                        </property>
+                                        <property name="gridStyle">
+                                            <enum>Qt::SolidLine</enum>
+                                        </property>
+                                        <property name="cornerButtonEnabled">
+                                            <bool>false</bool>
+                                        </property>
+                                        <attribute name="verticalHeaderVisible">
+                                            <bool>false</bool>
+                                        </attribute>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab_saved_net_data">
+                            <attribute name="title">
+                                <string>已保存网络数据</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayoutSavedNetData">
+                                <item>
+                                    <widget class="QTableView" name="tv_saved_net_data">
+                                        <property name="autoScroll">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="editTriggers">
+                                            <set>QAbstractItemView::NoEditTriggers</set>
+                                        </property>
+                                        <property name="alternatingRowColors">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="selectionMode">
+                                            <enum>QAbstractItemView::SingleSelection</enum>
+                                        </property>
+                                        <property name="selectionBehavior">
+                                            <enum>QAbstractItemView::SelectRows</enum>
+                                        </property>
+                                        <property name="verticalScrollMode">
+                                            <enum>QAbstractItemView::ScrollPerItem</enum>
+                                        </property>
+                                        <property name="gridStyle">
+                                            <enum>Qt::SolidLine</enum>
+                                        </property>
+                                        <property name="cornerButtonEnabled">
+                                            <bool>false</bool>
+                                        </property>
+                                        <attribute name="verticalHeaderVisible">
+                                            <bool>false</bool>
+                                        </attribute>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab_saved_disk_data">
+                            <attribute name="title">
+                                <string>已保存磁盘数据</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayoutSavedDiskData">
+                                <item>
+                                    <widget class="QTableView" name="tv_saved_disk_data">
+                                        <property name="autoScroll">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="editTriggers">
+                                            <set>QAbstractItemView::NoEditTriggers</set>
+                                        </property>
+                                        <property name="alternatingRowColors">
+                                            <bool>true</bool>
+                                        </property>
+                                        <property name="selectionMode">
+                                            <enum>QAbstractItemView::SingleSelection</enum>
+                                        </property>
+                                        <property name="selectionBehavior">
+                                            <enum>QAbstractItemView::SelectRows</enum>
+                                        </property>
+                                        <property name="verticalScrollMode">
+                                            <enum>QAbstractItemView::ScrollPerItem</enum>
+                                        </property>
+                                        <property name="gridStyle">
+                                            <enum>Qt::SolidLine</enum>
+                                        </property>
+                                        <property name="cornerButtonEnabled">
+                                            <bool>false</bool>
+                                        </property>
+                                        <attribute name="verticalHeaderVisible">
+                                            <bool>false</bool>
+                                        </attribute>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="tab_setting">
+                            <attribute name="title">
+                                <string>设置 </string>
+                            </attribute>
+                            <widget class="QPushButton" name="pb_save">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>160</x>
+                                        <y>180</y>
+                                        <width>200</width>
+                                        <height>200</height>
+                                    </rect>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>200</width>
+                                        <height>200</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string>保存到数据库</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" name="le_fresh_time">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>590</x>
+                                        <y>180</y>
+                                        <width>381</width>
+                                        <height>121</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string />
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" name="pb_confirm_fresh">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>590</x>
+                                        <y>310</y>
+                                        <width>381</width>
+                                        <height>71</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>确定</string>
+                                </property>
+                            </widget>
+                        </widget>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QStatusBar" name="statusBar" />
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>QChartView</class>
+            <extends>QGraphicsView</extends>
+            <header>QtCharts</header>
+        </customwidget>
+    </customwidgets>
+    <resources />
+    <connections />
+</ui>

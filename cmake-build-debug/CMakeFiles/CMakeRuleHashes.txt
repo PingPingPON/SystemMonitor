@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+955c7065d1063a4f9123b8b0edd93e72 ../SystemMonitor_zh_CN.ts
+bdcaf9c040a69d225baf9bfa1eebedff CMakeFiles/SystemMonitor_autogen
+35ac8ca1b0ae5a6e6854103261cad571 SystemMonitor_autogen/EWIEGA46WW/qrc_img.cpp
